@@ -1,0 +1,7 @@
+.vs
+/x64
+*.db
+*.cmd
+/Debug
+/GPELoader/Debug
+/GPELoader/x64
