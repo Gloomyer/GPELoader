@@ -20,7 +20,7 @@ private:
 
 FileLoader::FileLoader(void(*ecb)(DWORD errCode, CString errMsg) = NULL) {
 	this->errorCallBack = ecb;
-;
+}
 
 FileLoader::~FileLoader() {
 	this->errorCallBack = NULL;

@@ -2,6 +2,7 @@
 /x64
 *.db
 *.cmd
+/ipch
 /Debug
 /GPELoader/Debug
 /GPELoader/x64
