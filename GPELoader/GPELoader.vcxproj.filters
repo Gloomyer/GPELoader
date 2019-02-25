@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\pe">
+      <UniqueIdentifier>{1954d974-0b4c-47ea-9805-b3f154af7d69}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GPELoader.h">
@@ -29,6 +32,12 @@
     </ClInclude>
     <ClInclude Include="Resource.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseLoader.h">
+      <Filter>头文件\pe</Filter>
+    </ClInclude>
+    <ClInclude Include="FileLoader.h">
+      <Filter>头文件\pe</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

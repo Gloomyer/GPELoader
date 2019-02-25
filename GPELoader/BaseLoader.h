@@ -2,6 +2,7 @@
 #pragma once
 
 #include <minwindef.h>
+#include <afxstr.h>
 
 class BaseLoader {
 public:
