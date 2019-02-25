@@ -180,6 +180,7 @@
   <ItemGroup>
     <ClInclude Include="BaseLoader.h" />
     <ClInclude Include="FileLoader.h" />
+    <ClInclude Include="GFileAnalyze.h" />
     <ClInclude Include="GPELoader.h" />
     <ClInclude Include="GPELoaderDlg.h" />
     <ClInclude Include="Resource.h" />

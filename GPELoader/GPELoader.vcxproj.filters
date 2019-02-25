@@ -39,6 +39,9 @@
     <ClInclude Include="FileLoader.h">
       <Filter>头文件\pe</Filter>
     </ClInclude>
+    <ClInclude Include="GFileAnalyze.h">
+      <Filter>头文件\pe</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GPELoader.cpp">

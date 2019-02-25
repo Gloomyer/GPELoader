@@ -7,7 +7,7 @@
 class BaseLoader {
 public:
 	virtual BOOL init() = 0;
-	virtual BOOL load() = 0;
+	virtual BOOL load(CString filePath) = 0;
 	virtual BOOL unload() = 0;
-	virtual BOOL outputErrorMsg() = 0;
+	virtual BOOL outputMsg(DWORD errCode, CString errMsg) = 0;
 };

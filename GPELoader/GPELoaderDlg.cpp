@@ -6,6 +6,7 @@
 #include "GPELoader.h"
 #include "GPELoaderDlg.h"
 #include "afxdialogex.h"
+#include "FileLoader.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -66,7 +67,6 @@ BEGIN_MESSAGE_MAP(CGPELoaderDlg, CDialogEx)
 	ON_WM_QUERYDRAGICON()
 END_MESSAGE_MAP()
 
-
 // CGPELoaderDlg 消息处理程序
 
 BOOL CGPELoaderDlg::OnInitDialog()
@@ -102,6 +102,8 @@ BOOL CGPELoaderDlg::OnInitDialog()
 
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
+
+
 
 void CGPELoaderDlg::OnSysCommand(UINT nID, LPARAM lParam)
 {
