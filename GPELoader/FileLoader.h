@@ -42,6 +42,12 @@ FileLoader::FileLoader(void(*msgCallback)(DWORD errCode, CString errMsg) = NULL)
 
 FileLoader::~FileLoader() {
 	this->msgCallback = NULL;
+
+	//卸载地址
+	if (this->m_pFileHandle != NULL) {
+		delete this->m_pFileHandle;
+		this->m_pFileHandle = NULL;
+	}
 }
 
 BOOL FileLoader::init() {
@@ -88,7 +94,8 @@ BOOL FileLoader::load(CString filePath) {
 	//获取文件大小
 	dwFileSize = GetFileSize(hFile, &dwFileSizeHight);
 
-	if (0 == dwFileSize && 0 == dwFileSizeHight) {
+	if ((INVALID_FILE_SIZE == dwFileSize || dwFileSize == 0)
+		&& 0 == dwFileSizeHight) {
 		msg = _T("文件大小获取失败!");
 		outputMsg(ERROR_RET, msg);
 		return FALSE;

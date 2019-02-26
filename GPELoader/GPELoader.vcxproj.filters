@@ -42,6 +42,9 @@
     <ClInclude Include="GFileAnalyze.h">
       <Filter>头文件\pe</Filter>
     </ClInclude>
+    <ClInclude Include="PELoader.h">
+      <Filter>头文件\pe</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GPELoader.cpp">
